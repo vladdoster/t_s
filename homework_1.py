@@ -4,23 +4,20 @@
 # September 15th, 2019
 
 #############################################################################
-# To install dependencies for imports, run pip3 install -r requirements.txt #
+# To install dependencies, run pip3 install -r requirements.txt #
 #############################################################################
 
-##### Setup (Not important)#####
-# Imports
+##### Setup (Not important) ##########
 import numpy as np
-import pandas as pd
 import seaborn as sns
-import matplotlib.pyplot as plt
 import statsmodels
 from scipy import stats
 import matplotlib.pyplot as plt  # Needed by pandas plot class
 import scipy
-import xlrd  # Pandas dependency for reading in excel files
+import statsmodels.api as sm
 import pandas as pd
 
-# Make seaborn happy
+# seaborne styling
 sns.set_style("whitegrid")
 
 # vim variable completion ftw
@@ -30,23 +27,20 @@ pa = 'political_affiliation'
 hs_gpa = 'high_sch_GPA'
 col_gpa = 'college_GPA'
 veg = 'vegetarian'
+#################################
 
-#################
-
-# Load in dataset
 data_set_path = 'datasets/hw1_data.xlsx'  # Make own variable if need to use later
-df = pd.read_excel(data_set_path)
+df = pd.read_excel(data_set_path)  # Read in dataset
 
 '''
 Problem 1
-
 Categorize the variables (measurements) of this data set according to the following levels (ordinal, nominal, ratio and interval).
-
-ordinal variables: None in the dataset
-nominal variables: gender, political_affiliation, vegetarian, abortion_legalize, Full Time Student, Mode of transportation
-ratio variables: Weight
-interval variables: age, high_school_GPA, college_GPA
 '''
+# ordinal variables: None in the dataset
+# nominal variables: gender, political_affiliation, vegetarian, abortion_legalize, Full Time Student, Mode of transportation
+# ratio variables: Weight
+# interval variables: age, high_school_GPA, college_GPA
+
 
 '''
 Problem 2
@@ -105,14 +99,14 @@ Problem 7
 Draw a scatter plot for weight and age
 '''
 plt.figure(5)
-sns.scatterplot(data=df[[weight, age]]).set_title('Problem 7')
+sns.scatterplot(data=df[[weight, age]]).set_title('Problem 7 - Weight and Age')
 
 '''
 Problem 8
 Investigate relation between HS and college GPA
 '''
 plt.figure(6)
-sns.regplot(x=col_gpa, y=hs_gpa, data=df[[col_gpa, hs_gpa]], x_ci=0.99).set_title('Problem 8')
+sns.regplot(x=col_gpa, y=hs_gpa, data=df[[col_gpa, hs_gpa]], x_ci=0.99).set_title('Problem 8 - Regression')
 
 # Interpretation:
 # We can conclude that HS gpa pretty much predicts the college GPA. The coefficent given is 1.028 which means if
@@ -122,11 +116,8 @@ sns.regplot(x=col_gpa, y=hs_gpa, data=df[[col_gpa, hs_gpa]], x_ci=0.99).set_titl
 Problem 9
 The linear regression fit is defined as $y=\beta_0+\beta_1 x+\epsilon$, where $y$ is the dependent variable, $X$  
 is independent variable, and $\epsilon$ is a zero mean white noise.
-
 We want to investigate if there is a linear relation between High School GPA and College GPA.
 '''
-import statsmodels.api as sm
-
 X = df[[hs_gpa]]
 y = df[[col_gpa]]
 
@@ -147,9 +138,4 @@ Investigate how accurate is your model by plotting the residuals and qq plot of 
 plt.figure(8)
 statsmodels.api.qqplot(model.resid, fit=True)
 
-# Plot related
-plt.show()  # Show plots after all problems solved
-
-# Debug stmts
-# print(list(df.columns))
-# print(df.head().to_string())
+plt.show()  # Show generated plots
