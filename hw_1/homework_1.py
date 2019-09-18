@@ -3,14 +3,18 @@
 # Author: Vlad Doster
 # September 15th, 2019
 
-#############################################################################
-# To install dependencies, run pip3 install -r requirements.txt #
-#############################################################################
+#########################################################################################
+# To install dependencies, run pip3 install -r requirements.txt                         #
+#                                                                                       #
+# Run in hw_1/ dir                                                                      #
+# python3 homework_1.py or change data_set_path variable on line 38 to your preference  #
+#########################################################################################
 
 ##### Setup (Not important) ##########
 import numpy as np
 import seaborn as sns
 import statsmodels
+from pandas.plotting import autocorrelation_plot
 from scipy import stats
 import matplotlib.pyplot as plt  # Needed by pandas plot class
 import scipy
@@ -18,6 +22,8 @@ import statsmodels.api as sm
 import pandas as pd
 
 # seaborne styling
+from seaborn_qqplot import qqplot
+
 sns.set_style("whitegrid")
 
 # vim variable completion ftw
@@ -29,7 +35,7 @@ col_gpa = 'college_GPA'
 veg = 'vegetarian'
 #################################
 
-data_set_path = 'datasets/hw1_data.xlsx'  # Make own variable if need to use later
+data_set_path = '../datasets/hw1_data.xlsx'  # Make own variable if need to use later
 df = pd.read_excel(data_set_path)  # Read in dataset
 
 '''
@@ -59,10 +65,10 @@ sns.distplot(df.get(age).values, kde=False, rug=True).set(xlabel=age, ylabel='Fr
 plt.figure(3)
 sns.distplot(df.get(weight).values, kde=False, rug=True).set(xlabel=weight, ylabel='Frequency',
                                                              title='Problem 2- {}'.format(weight))
-'''
+print('''
 Problem 3
-Find the numerical summary (mean, median, mode, etc) of quantitative variables
-'''
+Find the numerical summary (mean, median, mode, etc) of quantitative variables\n
+''')
 print(df.describe(include=[np.number]).to_string())
 
 
@@ -74,17 +80,17 @@ def mean_confidence_interval(data, confidence=0.95):
     return m, m - h, m + h
 
 
-'''
+print('''
 Problem 4
-Compute a 95% confidence interval for the Age variable and interpret your result.
-'''
+Compute a 95% confidence interval for the Age variable and interpret your result.\n
+''')
 print("\n95% CI for {} ~ {}".format(age, mean_confidence_interval(df.get(age).values)))
 
-'''
+print('''
 Problem 5
-Compute the 99\% confidence interval for the college GPA.
-'''
-print("\n99% CI for {} ~ {}".format(col_gpa, mean_confidence_interval(df.get(col_gpa).values, confidence=0.99)))
+Compute the 99\% confidence interval for the college GPA.\n
+''')
+print("99% CI for {} ~ {}".format(col_gpa, mean_confidence_interval(df.get(col_gpa).values, confidence=0.99)))
 
 '''
 Problem 6
@@ -106,7 +112,7 @@ Problem 8
 Investigate relation between HS and college GPA
 '''
 plt.figure(6)
-sns.regplot(x=col_gpa, y=hs_gpa, data=df[[col_gpa, hs_gpa]], x_ci=0.99).set_title('Problem 8 - Regression')
+sns.regplot(x=col_gpa, y=hs_gpa, data=df[[col_gpa, hs_gpa]], x_ci=0.99).set(title='Problem 8 - Regression')
 
 # Interpretation:
 # We can conclude that HS gpa pretty much predicts the college GPA. The coefficent given is 1.028 which means if
@@ -124,18 +130,19 @@ y = df[[col_gpa]]
 model = sm.OLS(y, X).fit()
 predictions = model.predict(X)
 
-print('\n{}'.format(model.summary()))
+print('\n{}\n'.format(model.summary()))
 
-# From the summary, the relationship seems to be you do as well in college as you do in HS with a small amount doing
-# better.
+# interpretation
+print('''From the summary, the relationship seems to be you do as well in college as you do in HS with a small amount doing
+# better.''')
 
 '''
 Problem 10
 Investigate how accurate is your model by plotting the residuals and qq plot of the error. Comment on your finding. 
 '''
-
+# Wasnt too sure about this question
 # residual plot
 plt.figure(8)
-statsmodels.api.qqplot(model.resid, fit=True)
+qqplot(data=df[[col_gpa, hs_gpa]], x=col_gpa, y=hs_gpa).set(title='Problem 10 - qqplot')
 
 plt.show()  # Show generated plots
