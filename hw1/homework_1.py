@@ -6,7 +6,7 @@
 #########################################################################################
 # To install dependencies, run pip3 install -r requirements.txt                         #
 #                                                                                       #
-# Run in hw_1/ dir                                                                      #
+# Run in hw1/ dir                                                                      #
 # python3 homework_1.py or change data_set_path variable on line 38 to your preference  #
 #########################################################################################
 
