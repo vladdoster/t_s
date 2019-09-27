@@ -5,6 +5,9 @@ library("TTR")
 ```
 
 ### Problem 1 ###
+#### Simulate a completely random process of length 100 with independent, normal values. Plot the time
+#### series plot. Does it look random? Discuss if it follows any pattern, seasonality, and cyclic.
+
 plot(main='Problem 1', as.ts(rnorm(100)))
 Seems to be randomly distributed. Has no dicernable pattern
 that I can see. Seems to similar to a sine wave but with no real pattern.
