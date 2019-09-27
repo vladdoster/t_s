@@ -8,12 +8,17 @@ library("TTR")
 plot(main='Problem 1', as.ts(rnorm(100)))
 Seems to be randomly distributed. Has no dicernable pattern
 that I can see. Seems to similar to a sine wave but with no real pattern.
+![fig1](https://github.com/vladdoster/t_s/blob/master/hw_1/figs/p1.png)
 
 ### Problem 2 ###
 plot(main='Problem 2', as.ts(rchisq(n=50, df=2)))
+![fig1](https://github.com/vladdoster/t_s/blob/master/hw_1/figs/p2.png)
+
 
 ### Problem 3 ###
 plot(main='Problem 3', as.ts(rt(48, 5)))
+![fig1](https://github.com/vladdoster/t_s/blob/master/hw_1/figs/p3.png)
+
 
 ### Problem 4 ###
 #### Describe your data set, what is it and where it come from.
@@ -34,6 +39,7 @@ ts_king <- ts(kings)
 summary(ts_king)
 plot(main='Problem 4 king ts', ts_king)
 ```
+![fig1](https://github.com/vladdoster/t_s/blob/master/hw_1/figs/p4.png)
 
 By smoothing the data, we can see that after the first 20 kings, lifespans increased which gives us insight
 about possible technological or medicine advances. This could give historians a easy way to boil down periods of history to look at.
