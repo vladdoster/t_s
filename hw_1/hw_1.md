@@ -5,8 +5,8 @@ library("TTR")
 ```
 
 ### Problem 1 ###
-#### Simulate a completely random process of length 100 with independent, normal values. Plot the time
-#### series plot. Does it look random? Discuss if it follows any pattern, seasonality, and cyclic.
+
+#### Simulate a completely random process of length 100 with independent, normal values. Plot the time series plot. Does it look random? Discuss if it follows any pattern, seasonality, and cyclic.
 
 plot(main='Problem 1', as.ts(rnorm(100)))
 Seems to be randomly distributed. Has no dicernable pattern
@@ -14,11 +14,15 @@ that I can see. Seems to similar to a sine wave but with no real pattern.
 ![fig1](https://github.com/vladdoster/t_s/blob/master/hw_1/figs/p1.png)
 
 ### Problem 2 ###
+
+#### Simulate a completely random process of length 50 with independent, chi-square distributed values, each with 2 degrees of freedom. Display the time series plot. Does it look random and non normal?
+
 plot(main='Problem 2', as.ts(rchisq(n=50, df=2)))
 ![fig1](https://github.com/vladdoster/t_s/blob/master/hw_1/figs/p2.png)
 
 
 ### Problem 3 ###
+#### Simulate a completely random process of length 50 with independent, t-distributed values each with 5 degrees of freedom. Construct the time series plot. Does it look random and non normal?
 plot(main='Problem 3', as.ts(rt(48, 5)))
 ![fig1](https://github.com/vladdoster/t_s/blob/master/hw_1/figs/p3.png)
 
