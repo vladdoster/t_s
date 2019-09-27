@@ -13,7 +13,7 @@ plot(main='Problem 1', as.ts(rnorm(100)))
 ```
 
 Seems to be randomly distributed. Has no dicernable pattern
-that I can see. Seems to similar to a sine wave but with no real pattern.
+that I can see. Seems to similar to a sine wave but with no real pattern. It is random.
 ![fig1](https://github.com/vladdoster/t_s/blob/master/hw_1/figs/p1.png)
 
 ### Problem 2 ###
@@ -25,6 +25,8 @@ plot(main='Problem 2', as.ts(rchisq(n=50, df=2)))
 ```
 
 ![fig1](https://github.com/vladdoster/t_s/blob/master/hw_1/figs/p2.png)
+
+It does not look normal because it is chisquared, there is a cylical pattern created.
 
 
 ### Problem 3 ###
