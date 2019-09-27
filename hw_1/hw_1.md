@@ -12,9 +12,10 @@ library("TTR")
 plot(main='Problem 1', as.ts(rnorm(100)))
 ```
 
+![fig1](https://github.com/vladdoster/t_s/blob/master/hw_1/figs/p1.png)
+
 Seems to be randomly distributed. Has no dicernable pattern
 that I can see. Seems to similar to a sine wave but with no real pattern. It is random.
-![fig1](https://github.com/vladdoster/t_s/blob/master/hw_1/figs/p1.png)
 
 ### Problem 2 ###
 
