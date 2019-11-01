@@ -1,3 +1,4 @@
+# HW #3
 # 1
 ```
 par(mfrow=c(3,1)) # 3x1 figure matrix
