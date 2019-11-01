@@ -80,16 +80,13 @@ plot(tempdub, main="Predicted tempdub values in red")
 points(predicted, col="red", type="l")
 ```
 <div align="center">
-        
-![](https://github.com/vladdoster/t_s/blob/master/3d.png)
-
+<img src="https://github.com/vladdoster/t_s/blob/master/3d.png" data-canonical-src="https://github.com/vladdoster/t_s/blob/master/3d.png" width="500" height="400"/>   
 </div>
 
 ### 3e
 ```
 mean((testing-predicted)^2)
 ```
-
 #### output
 ```
 [1] 22.34734
