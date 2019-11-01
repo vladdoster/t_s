@@ -6,9 +6,7 @@ plot(acf(arima.sim(model=list(ma=c(1.2,-.7)), n=100), plot = FALSE), main="1b")
 plot(acf(arima.sim(model=list(ma=c(-1,-.6)), n=100), plot = FALSE), main="1c")
 ```
 <div align="center">
-        
-![](https://github.com/vladdoster/t_s/blob/master/p1.png)
-
+<img src="https://github.com/vladdoster/t_s/blob/master/p1.png" data-canonical-src="https://github.com/vladdoster/t_s/blob/master/p1.png" width="500" height="500"/>
 </div>
 
 # 2
@@ -19,9 +17,7 @@ plot(acf(arima.sim(model=list(ar=c(.95)), n=100), plot = FALSE), main="2b")
 plot(acf(arima.sim(model=list(ar=c(.4), ma=c(.5)), n=100), plot = FALSE), main="2c")
 ```
 <div align="center">
-        
-![](https://github.com/vladdoster/t_s/blob/master/p2.png)
-
+<img src="https://github.com/vladdoster/t_s/blob/master/p2.png" data-canonical-src="https://github.com/vladdoster/t_s/blob/master/p2.png" width="500" height="500"/>        
 </div>
 
 # 3
@@ -39,10 +35,8 @@ plot(decompose(tempdub))
 ```
 
 <div align="center">
-        
-![](https://github.com/vladdoster/t_s/blob/master/3a.png)
-![](https://github.com/vladdoster/t_s/blob/master/3a1.png)
-
+<img src="https://github.com/vladdoster/t_s/blob/master/3a.png" data-canonical-src="https://github.com/vladdoster/t_s/blob/master/3a.png" width="500" height="500"/>        
+<img src="https://github.com/vladdoster/t_s/blob/master/3a1.png" data-canonical-src="https://github.com/vladdoster/t_s/blob/master/3a1.png" width="500" height="500"/>        
 </div>
 
 ### 3b
