@@ -10,11 +10,15 @@ b. The data shows that there are more sales in the warmer months and less sales 
 
 ![b](https://github.com/vladdoster/t_s/blob/master/b.png)
 
-
 c. The line output would be y=0.1654 -313.6318. This shows a very small trend over time.
 
-d. The quadratic time model would be y = -.01840x^2 + 7.315x – 0.0007267.
+d.
 
-e. 
+![d](https://github.com/vladdoster/t_s/blob/master/d.png)
+
+e. The quadratic time model would be y = -.01840x^2 + 7.315x – 0.0007267.
 
 f. 
+
+![f](https://github.com/vladdoster/t_s/blob/master/f.png)
+
