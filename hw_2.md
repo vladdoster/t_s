@@ -2,7 +2,7 @@
 
 # Part 2
 
-a. The data is cyclic however there seems to be an upward trend in sales of beer.
+a. The data is cyclic however there seems to be an upward trend in sales of beer which plataeus and seems to be pulling back.
 
 ![a](https://github.com/vladdoster/t_s/blob/master/a.png)
 
