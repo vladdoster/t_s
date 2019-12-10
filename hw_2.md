@@ -1,3 +1,21 @@
+# Part 1
+
+1. My two data sets are Soy Bean sales data from 1975-2005 and Max Daily Temperatures in New Zealand. The soy beans dataset came from the US government and the New Zealand dataset came from https://niwa.co.nz/.
+
+2.
+![a](https://github.com/vladdoster/t_s/blob/master/p1_1.jpg)
+
+![a](https://github.com/vladdoster/t_s/blob/master/p1_2.jpg)
+
+3. The linear model for the trend is y = 11.64x + 95.14. The error is fairly normal which makes us comfortable with accepting the model. It is neither under/over fit.
+
+4. The seasonal model will be y = cos(2piT). The error seems to be normally distributed which means that this dataset is statonary and possibly iid.
+
+5. Forecasts:
+
+The linear model for the trend data predicts a value to be between 396.212 and 463.6172 which is reasonable. 
+
+The model for the seasonal data predicts a value to between 10.92 and 12.012.
 
 
 # Part 2
