@@ -1,3 +1,7 @@
+### Vlad Doster
+#### Mini-project #2
+#### October 11th, 2019
+
 # Part 1
 
 1. My two data sets are Soy Bean sales data from 1975-2005 and Max Daily Temperatures in New Zealand. The soy beans dataset came from the US government and the New Zealand dataset came from https://niwa.co.nz/.
