@@ -20,7 +20,7 @@ The model for the seasonal data predicts a value to between 10.92 and 12.012.
 
 # Part 2
 
-a. The data is cyclic however there seems to be an upward trend in sales of beer which plataeus and seems to be pulling back.
+a. The data is very much cyclic however there seems to be an upward trend in sales of beer which plataeus and seems to be pulling back.
 
 ![a](https://github.com/vladdoster/t_s/blob/master/a.png)
 
@@ -28,7 +28,7 @@ b. The data shows that there are greater sales in the warmer months and less sal
 
 ![b](https://github.com/vladdoster/t_s/blob/master/b.png)
 
-c. The line output would be y=0.1654 -302.7121. This shows a very small trend over time.
+c. The line output would be y=0.1654 -302.7121. This shows a very small trend over time which makes sense because there are always more people becoming adults.
 
 d.
 
