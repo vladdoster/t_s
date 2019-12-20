@@ -7,7 +7,7 @@ plot(acf(arima.sim(model=list(ma=c(1.2,-.7)), n=100), plot = FALSE), main="1b")
 plot(acf(arima.sim(model=list(ma=c(-1,-.6)), n=100), plot = FALSE), main="1c")
 ```
 <div align="center">
-<img src="https://github.com/vladdoster/t_s/blob/master/p1.png" data-canonical-src="https://github.com/vladdoster/t_s/blob/master/p1.png" width="500" height="500"/>
+<img src="https://github.com/vladdoster/t_s/blob/master/hw_3/p1.png" data-canonical-src="https://github.com/vladdoster/t_s/blob/master/hw_3/p1.png" width="500" height="500"/>
 </div>
 
 # 2
@@ -18,7 +18,7 @@ plot(acf(arima.sim(model=list(ar=c(.95)), n=100), plot = FALSE), main="2b")
 plot(acf(arima.sim(model=list(ar=c(.4), ma=c(.5)), n=100), plot = FALSE), main="2c")
 ```
 <div align="center">
-<img src="https://github.com/vladdoster/t_s/blob/master/p2.png" data-canonical-src="https://github.com/vladdoster/t_s/blob/master/p2.png" width="500" height="500"/>        
+<img src="https://github.com/vladdoster/t_s/blob/master/hw_3/p2.png" data-canonical-src="https://github.com/vladdoster/t_s/blob/master/hw_3/p2.png" width="500" height="500"/>        
 </div>
 
 # 3
@@ -36,8 +36,8 @@ plot(decompose(tempdub))
 ```
 
 <div align="center">
-<img src="https://github.com/vladdoster/t_s/blob/master/3a.png" data-canonical-src="https://github.com/vladdoster/t_s/blob/master/3a.png" width="500" height="400"/>        
-<img src="https://github.com/vladdoster/t_s/blob/master/3a1.png" data-canonical-src="https://github.com/vladdoster/t_s/blob/master/3a1.png" width="500" height="400"/>        
+<img src="https://github.com/vladdoster/t_s/blob/master/hw_3/3a.png" data-canonical-src="https://github.com/vladdoster/t_s/blob/master/hw_3/3a.png" width="500" height="400"/>        
+<img src="https://github.com/vladdoster/t_s/blob/master/hw_3/3a1.png" data-canonical-src="https://github.com/vladdoster/t_s/blob/master/hw_3/3a1.png" width="500" height="400"/>        
 </div>
 
 ### 3b
@@ -47,7 +47,7 @@ plot(td_acf, main="ACF to 30 lags")
 ```
 <div align="center">
         
-![](https://github.com/vladdoster/t_s/blob/master/3b.png)
+![](https://github.com/vladdoster/t_s/blob/master/hw_3/3b.png)
 
 </div>
 
@@ -81,7 +81,7 @@ plot(tempdub, main="Predicted tempdub values in red")
 points(predicted, col="red", type="l")
 ```
 <div align="center">
-<img src="https://github.com/vladdoster/t_s/blob/master/3d.png" data-canonical-src="https://github.com/vladdoster/t_s/blob/master/3d.png" width="500" height="400"/>   
+<img src="https://github.com/vladdoster/t_s/blob/master/hw_3/3d.png" data-canonical-src="https://github.com/vladdoster/t_s/blob/master/hw_3/3d.png" width="500" height="400"/>   
 </div>
 
 ### 3e
