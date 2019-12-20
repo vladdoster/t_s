@@ -1,15 +1,11 @@
-### Vlad Doster
-#### Mini-project #2
-#### October 11th, 2019
-
 # Part 1
 
 1. My two data sets are Soy Bean sales data from 1975-2005 and Max Daily Temperatures in New Zealand. The soy beans dataset came from the US government and the New Zealand dataset came from https://niwa.co.nz/.
 
 2.
-![a](https://github.com/vladdoster/t_s/blob/master/p1_1.jpg)
+![a](https://github.com/vladdoster/t_s/blob/master/hw_2/p1_1.jpg)
 
-![a](https://github.com/vladdoster/t_s/blob/master/p1_2.jpg)
+![a](https://github.com/vladdoster/t_s/blob/master/hw_2/p1_2.jpg)
 
 3. The linear model for the trend is y = 11.64x + 95.14. The error is fairly normal which makes us comfortable with accepting the model. It is neither under/over fit.
 
